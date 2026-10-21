@@ -32,21 +32,21 @@
         <tr>
             <td style="width:20%"></td>
             <td>
-                <form>
+                <form action="submit.html" method="post">
                     <table align="center"
                            border="1" dir="rtl"
                            placeholder="Enter your name">
                         <tr>
                             <td>שם פרטי:</td>
                             <td>
-                                <input type="text" id="fName" name="fName" maxlength="50" placeholder="שם פרטי"/>
+                                <input type="text" id="fName" name="fName" maxlength="50" placeholder="שם פרטי" />
                             </td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>שם משפחה:</td>
                             <td>
-                                <input type="text" id="lName" name="lName" maxlength="50" placeholder="שם משפחה"/>
+                                <input type="text" id="lName" name="lName" maxlength="50" placeholder="שם משפחה" />
                             </td>
                             <td></td>
                         </tr>
@@ -83,6 +83,44 @@
                                     <option value="058">058</option>
                                     <option value="059">059</option>
                                 </select>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>תאריך לידה:</td>
+                            <td>
+                                <input type="date" id="uDate" name="uDate" />
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>מין:</td>
+                            <td>
+                                <input type="radio" id="male" name="gender" value="male" checked />
+                                <label for="male">זכר</label>
+                                <input type="radio" id="female" name="gender" value="female" />
+                                <label for="female">נקבה</label>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>תחומי עניין:</td>
+                            <td>
+                                <input type="checkbox" id=" " name="interests" value="sports" />
+                                <label for="sports">ספורט</label>
+                                <input type="checkbox" id="music" name="interests" value="music" />
+                                <label for="music">מוזיקה</label>
+                                <input type="checkbox" id="travel" name="interests" value="travel" />
+                                <label for="travel">טיולים</label>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="שליחה" />
+                                resset
+                                <input type="reset" value="איפוס" />
                             </td>
                             <td></td>
                         </tr>
