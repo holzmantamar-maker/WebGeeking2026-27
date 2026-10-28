@@ -24,9 +24,22 @@
         myFunction(name);
 
         alert("End of script")
+
+        function bgcolorYellow() {
+            document.body.style.backgroundColor = "yellow";
+        }
+
+        function bgcolorGreen() {
+            document.body.style.backgroundColor = "green";
+        }
+
     </script>
 </head>
 <body>
-    <h1>Welcome to my  JavaScript page!</h1>
+    <h1 align="center">pick a color for my  JavaScript page!</h1>
+    <div align="center" dir="rtl">
+        <a href="javascript:bgcolorYellow()">רקע צהוב</a>
+        <a href="javascript:bgcolorGreen()">רקע ירוק</a>
+    </div>
 </body>
 </html>
