@@ -5,10 +5,46 @@
     <title></title>
     <script type="text/javascript">
         //  life cycle
-        //  alert("Hello from JavaScript!");
-        document.write("<h1>Welcome to my second JavaScript page!</h1>" + "")
+    //  alert("Hello from JavaScript!");
+        function createTable(fName, lName, uAge, uAdress) {
+            document.write(
+                "<table border='1'   align='center' dir='rtl' style='border-collapse: collapse; width: 100%;'>" +
+                "<tr>" +
+                "    <th>First Name</th>" +
+                "    <th>Last Name</th>" +
+                "    <th>Age</th>" +
+                "    <th>Address</th>" +
+                </tr>
+                <tr>
+                    td style="background-color:blue"></td>
+                    <td style="background-color:yellow"></td>
+                    <td style="background-color:green"></td>
+                    <td style="background-color:red"></td>
+                </tr>
+
+                <tr>
+                <td id="firstNameCell"></td>
+                <td id="lastNameCell"></td>
+                <td id="ageCell"></td>
+                <td id="addressCell"></td>
+    </tr>
+</table > "
+            )
+            
+
+
+        }
+
+   
+            var fName = prompt("Enter your first name:");
+            var lName = prompt("Enter your last name:");
+            var uAge = prompt("Enter your age:");
+            var uAdress = prompt("Enter your address:");
+        
+
+    </script>       
 </head>
 <body>
-
+    
 </body>
 </html>
