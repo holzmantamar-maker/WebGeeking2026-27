@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Second JavaScript Page</title>
+    <script type="text/javascript">
+        //  life cycle
+        //  alert("Hello from JavaScript!");
+
+        //  document.write("<h1>Hello from JavaScript document!</h1>" + "<h2 style='color: blue;'>This is a subtitle!</h2>")
+
+        function myFunction(firstName) {
+                alert("myFunction")
+            if (firstName === "Tamar") {
+                document.write("<h1>Hello " + firstName + "!</h1>")
+            }
+            else {
+                document.write("<h1>Hello, stranger!</h1>")
+            }
+        }
+
+        alert("start of script")
+        name = prompt("Enter your name:")
+        myFunction(name);
+
+        alert("End of script")
+    </script>
+</head>
+<body>
+    <h1>Welcome to my  JavaScript page!</h1>
+</body>
+</html>
