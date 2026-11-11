@@ -1,54 +1,44 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>JavaScript Events</title>
-    <style>
-        .button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
 
-        .button1 {
-            background-color: #f44336; /* Red */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
+    <style>
+        img {
+            width: 300px;
+            height: auto;
         }
     </style>
-    
-    <script type="text/javascript">
-        function myFunction() {
-            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+
+    <script>
+        function toSecondImage() {
+            document.getElementById("demo").src =
+                "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=500";
+        }
+
+        function toFirstImage() {
+            document.getElementById("demo").src =
+                "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=500";
         }
     </script>
-</head >
-            <body>
-                <h1>Button Web Page</h1>
-                <p id="demo">Paragraph A: simple text for temp paragraph</p>
-                <button type="button"
-                    class="button" name="TryMe"
-                    onclick="myFunction()">TryMe</button>
 
-                <p id="demo2">Changing content Way 2!</p>
-                <button type="button"
-                    class="button1"
-                    name="ChangeMe"
-                    onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!"'>
-                    ClickMe
-                </button>
+</head>
 
-            </body>
-</html >
+<body>
+
+    <h1 style="text-align:center">Queen Tamar</h1>
+
+    <div align="center">
+
+        <img id="demo"
+             src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=500"
+             alt="First picture"
+             onmouseover="toSecondImage()"
+             onmouseout="toFirstImage()">
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My Album</title>
+
+    <script type="text/javascript">
+        var albomSize = 2;
+        var counter = 1;
+
+        function nextImage() {
+            if (counter < akbomSize) {
+                counter ++
+            }
+            else {
+                counter = 1;
+            }
+            document.getElementById("albom").src = "Images/Poo.jpg";
+            
+        }
+
+        function prevImage() {
+            document.getElementById("albom").src = "Images/bike.jpg";
+            
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div align="center">
+
+        <h1 align="center">My Album</h1>
+
+        <br />
+
+        <a href="prevImage()">prev</a>
+
+        <a href="nextImage()">next</a>
+
+        <br />
+        <br />
+
+        <img id="albom"
+             src="Images/WhatsApp Image 2026-10-10 at 18.59.22.jpeg"
+             alt="first image"
+             height="300" />
+
+    </div>
+
+</body>
+</html>
